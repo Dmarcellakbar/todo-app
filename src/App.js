@@ -26,11 +26,12 @@ setInput('')
 };
 return (
 <div className="App">
-<h2> TODO List App</h2>
+<img src={"/fotokita.jpg"} style={{border: "1px solid #ddd", borderRadius: "10px", padding: "5px", width: "150px"}}/>
+<h2> Catatan Berdua (Dhea dan Dicky) </h2>
 <form>
-<TextField id="outlined-basic" label="Make Todo" variant="outlined" style={{margin:"0px 5px"}} size="small" value={input}
+<TextField id="outlined-basic" label="buat catatan" variant="outlined" style={{margin:"0px 5px"}} size="small" value={input}
 onChange={e=>setInput(e.target.value)} />
-<Button variant="contained" color="primary" onClick={addTodo}  >Add Todo</Button>
+<Button variant="contained" color="primary" onClick={addTodo}  >tambah catatan</Button>
 </form>
 <ul>
 {todos.map(item=> <Todo key={item.id} arr={item} />)}
